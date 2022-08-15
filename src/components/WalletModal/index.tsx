@@ -336,9 +336,11 @@ export default function WalletModal({
     return (
       <>
         {injectedOption}
+        {/*
         {coinbaseWalletOption}
         {walletConnectionOption}
         {fortmaticOption}
+        */}
       </>
     )
   }
