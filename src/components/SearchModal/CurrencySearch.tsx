@@ -25,7 +25,6 @@ import { ButtonText, CloseIcon, IconWrapper, ThemedText } from '../../theme'
 import { isAddress } from '../../utils'
 import Column from '../Column'
 import Row, { RowBetween, RowFixed } from '../Row'
-import CommonBases from './CommonBases'
 import CurrencyList from './CurrencyList'
 import ImportRow from './ImportRow'
 import { PaddedColumn, SearchInput, Separator } from './styleds'
@@ -212,7 +211,7 @@ export function CurrencySearch({
               onKeyDown={handleEnter}
             />
           </Row>
-          {showCommonBases && (
+          {/* showCommonBases && (
             <CommonBases
               chainId={chainId}
               onSelect={handleCurrencySelect}
@@ -220,7 +219,7 @@ export function CurrencySearch({
               searchQuery={searchQuery}
               isAddressSearch={isAddressSearch}
             />
-          )}
+          ) */}
         </PaddedColumn>
         <Separator />
         {searchToken && !searchTokenIsAdded ? (
